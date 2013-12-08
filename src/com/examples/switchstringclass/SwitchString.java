@@ -8,15 +8,16 @@ package com.examples.switchstringclass;
  * To change this template use File | Settings | File Templates.
  */
 public class SwitchString {
-
-
-
     public static void main (String args[])
     {
         String status = "NEW";
-        if (status.equalsIgnoreCase("NEW")) { System.out.println("Hi this is NEW");
-        } else if (status.equalsIgnoreCase("EXECUTE")) { System.out.println("Hi this is EXECUTE");
-        } else if (status.equalsIgnoreCase("PENDING")) { System.out.println("Hi this is PENDING");
+        switch (status) { case "NEW":
+            System.out.println("New");
+            break; case "EXECUTE":
+            System.out.println("Execute");
+            break; case "PENDING":
+            System.out.println("Pending"); break;
+            default: break;
         }
 
     }
